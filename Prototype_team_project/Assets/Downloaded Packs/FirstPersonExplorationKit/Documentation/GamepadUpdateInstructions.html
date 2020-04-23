@@ -1,0 +1,77 @@
+<html>
+
+<h2>First Person Exploration Kit: XBox 360 Controller Update</h3>
+
+<h3><u>Update Instructions</u></h3>
+
+<h3>NOTE: As of version 1.1, these updates are included in the package. These instructions are for posterity, or for those who want to manually perform the update to projects that used v1.0 of the package.</h3>
+
+<p><u>Gamepad Inputs</u>:</p>
+
+<p><b>In Project Settings > Input, UPDATE the existing "Submit" input as follows:</b></p>
+<p>Submit</p>
+<img src="img/UpdatedSubmit.jpg"><br/>
+
+<p><b>In Project Settings > Input, ADD the following inputs:</b></p>
+<p>Gamepad Look X and Y (for looking around)</p>
+<img src="img/GamepadLookXY.jpg"><br/>
+<p><u>Note</u>: There's an existing "Horizontal" axis that should already work with the XBox 360 left analog stick. It looks like this:</p>
+<img src="img/GamepadExistingHorizontal.jpg"><br/>
+
+<br/>
+<p>Gamepad Interact and Examine</p>
+<img src="img/GamepadInteractExamine.jpg"><br/>
+
+<br/>
+<p>Gamepad Zoom and Close</p>
+<img src="img/GamepadZoomClose.jpg"><br/>
+
+<h3><u>Script Updates</u></h3>
+<p>Replace the following scripts with the updated versions:</p>
+<ul>
+<li>FPEInteractionManagerScript.cs (in Assets\FirstPersonExplorationKit\Scripts\)</li>
+<li>MouseLook.cs (in Assets\FirstPersonExplorationKit\Standard Assets\Characters\FirstPersonCharacter\Scripts\)</li>
+</ul>
+
+<h3><u>Inspector Changes</u></h3>
+<p>Once scripts have been replaced, changed the following Prefab Inpsector values (recommend that you just open demoScene.unity and update from there (don't forget to press "Apply" to update the prefab!):</p>
+<ul>
+<li>In FPEPlayerController, I've added "Flip Gamepad Y" flag to MouseLook to allow for gamepad right analog to have flipped Y axis as some people prefer that mode.</li>
+<li>In FPEEventSystem "Submit Button" Field should be changed to have the value "Gamepad Close". This allows Left Analog stick to change Journal buttons, and 'B' button to press them.</li>
+</ul>
+
+<h3><u>How to use the new controls:</u></h3>
+
+<ul>
+<li>X: Interact</li>
+<li>B: Skip Journal, press Journal Buttons (Previous, Next, Close)</li>
+<li>Left Shoulder: Zoom in, or examine object if object is being held</li>
+<li>Left Analog: Move player</li>
+<li>Right Analog: Look around</li>
+</ul>
+
+<p>Note that the on screen control hints have not been changed. This is really a style/art choice for your specific game. That said, there is a 
+wonderful free package of gamepad (and other) button icons on opengameart.org called "FREE Keyboard and controllers prompts pack" available
+here: <a href="http://opengameart.org/content/free-keyboard-and-controllers-prompts-pack" target="xelu">http://opengameart.org/content/free-keyboard-and-controllers-prompts-pack</a></p>
+
+<p>I've used this a few times and it's pretty great.</p>
+
+<h3><u>List of Script Changes</u></h3>
+
+<p><u>FPEInteractionManagerScript.cs</u>:</p>
+<ul>
+<li>When examining object, yield to gamepad if no mouse input</li>
+<li>Added "Gamepad Interact" button check to Interaction input logic</li>
+<li>Added "Gamepad Examine" button check to Examine input logic (2 places, for on and off)</li>
+<li>Added "Gamepad Close" button check to allow Audio Diary skip</li>
+<li>Added "Gamepad Examine" button check for camera zoom logic</li>
+</ul>
+<p><u>MouseLook.cs</u>:</p>
+<ul>
+<li>Added logic to yield to gamepad look if no mouse look input is given</li>
+</ul>
+
+<p>If you have any additional questions or something doesn't work as described above please let me know. You can reach me at support@whilefun.com</p>
+<br/>
+
+</html>

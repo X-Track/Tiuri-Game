@@ -1,0 +1,87 @@
+fileFormatVersion: 2
+guid: 42ab3da7593bbc843907ca8b1a643aa8
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: CardReader
+    100002: DoorA
+    100004: DoorB
+    100006: DoorFrame
+    100008: //RootNode
+    100010: StatusLight
+    400000: CardReader
+    400002: DoorA
+    400004: DoorB
+    400006: DoorFrame
+    400008: //RootNode
+    400010: StatusLight
+    2300000: CardReader
+    2300002: DoorA
+    2300004: DoorB
+    2300006: DoorFrame
+    2300008: StatusLight
+    3300000: CardReader
+    3300002: DoorA
+    3300004: DoorB
+    3300006: DoorFrame
+    3300008: StatusLight
+    4300000: StatusLight
+    4300002: CardReader
+    4300004: DoorB
+    4300006: DoorFrame
+    4300008: DoorA
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .0149999997
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
