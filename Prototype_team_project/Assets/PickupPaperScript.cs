@@ -27,7 +27,10 @@ public class PickupPaperScript : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        isInRange = true;
+        if (other.gameObject.tag == "Player")
+        {
+            isInRange = true;
+        }
     }
 
     private void OnTriggerExit(Collider other)

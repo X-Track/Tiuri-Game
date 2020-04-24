@@ -25,6 +25,7 @@ public class FPEDoorScript : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
+            Debug.Log("HAZZAAAA");
             canInteract = true;
         }
     }
