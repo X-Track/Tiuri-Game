@@ -19,7 +19,7 @@ public class PickupPaperScript : MonoBehaviour
 
     void Update()
     {
-        if (isInRange && Input.GetKeyDown("F"))
+        if (isInRange && Input.GetKeyDown(KeyCode.F))
         {
             GivePapersToMe();
         }
