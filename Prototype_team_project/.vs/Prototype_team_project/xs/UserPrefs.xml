@@ -1,18 +1,10 @@
 ﻿<Properties StartupConfiguration="{747BA969-08F1-06F2-7B53-91EA4CA13637}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Downloaded Packs/IndieMarc/EnemyVision/Scripts/EnemyLOS.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/PickupPaperScript.cs">
     <Files>
       <File FileName="Assets/Downloaded Packs/IndieMarc/EnemyVision/Scripts/EnemyLOS.cs" Line="133" Column="1" />
-      <File FileName="Assets/Downloaded Packs/FirstPersonExplorationKit/Standard Assets/Characters/FirstPersonCharacter/Scripts/FirstPersonController.cs" Line="286" Column="18" />
-      <File FileName="Assets/Downloaded Packs/FirstPersonExplorationKit/Scripts/FPEInteractableInventoryItemScript.cs" Line="1" Column="1" />
-      <File FileName="Assets/PaperCounterUI.cs" Line="10" Column="30" />
-      <File FileName="Assets/Downloaded Packs/FirstPersonExplorationKit/Scripts/FPEInteractionManagerScript.cs" Line="626" Column="108" />
-      <File FileName="Assets/Downloaded Packs/FirstPersonExplorationKit/Scripts/FPEInventoryManagerScript.cs" Line="1" Column="1" />
-      <File FileName="Assets/FPEInteractablePaperScript.cs" Line="29" Column="1" />
-      <File FileName="Assets/SwingingAxes.cs" Line="12" Column="1" />
-      <File FileName="Assets/Downloaded Packs/IndieMarc/EnemyVision/Scripts/EnemyFollow.cs" Line="19" Column="43" />
-      <File FileName="Assets/Downloaded Packs/IndieMarc/EnemyVision/Scripts/Enemy.cs" Line="80" Column="53" />
-      <File FileName="Assets/Downloaded Packs/IndieMarc/EnemyVision/Scripts/EnemyPatrol.cs" Line="1" Column="12" />
-      <File FileName="Assets/MessageLightArea.cs" Line="32" Column="26" />
+      <File FileName="Assets/Scripts/FPEInteractablePaperScript.cs" Line="13" Column="1" />
+      <File FileName="Assets/PickupPaperScript.cs" Line="15" Column="51" />
+      <File FileName="Assets/Scripts/PaperCounterUI.cs" Line="16" Column="44" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
