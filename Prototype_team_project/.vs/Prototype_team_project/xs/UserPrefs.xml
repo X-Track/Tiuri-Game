@@ -1,11 +1,15 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/FPEDoorScript.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/PaperCounterUI.cs">
     <Files>
       <File FileName="Assets/Downloaded Packs/IndieMarc/EnemyVision/Scripts/EnemyLOS.cs" Line="133" Column="1" />
-      <File FileName="Assets/Scripts/FPEInteractablePaperScript.cs" Line="13" Column="1" />
-      <File FileName="Assets/Scripts/PickupPaperScript.cs" Line="31" Column="10" />
-      <File FileName="Assets/Scripts/PaperCounterUI.cs" Line="37" Column="10" />
-      <File FileName="Assets/Scripts/FPEDoorScript.cs" Line="28" Column="35" />
+      <File FileName="Assets/Scripts/FPEInteractablePaperScript.cs" Line="22" Column="5" />
+      <File FileName="Assets/Scripts/PickupPaperScript.cs" Line="51" Column="1" />
+      <File FileName="Assets/Scripts/PaperCounterUI.cs" Line="40" Column="5" />
+      <File FileName="Assets/Scripts/FPEDoorScript.cs" Line="31" Column="6" />
+      <File FileName="Assets/switchSwingingAxes.cs" Line="3" Column="19" />
+      <File FileName="Assets/Scripts/SwingingAxes.cs" Line="25" Column="10" />
+      <File FileName="Assets/Scripts/MessageLightArea.cs" Line="13" Column="103" />
+      <File FileName="Assets/BarrierNotification.cs" Line="21" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />

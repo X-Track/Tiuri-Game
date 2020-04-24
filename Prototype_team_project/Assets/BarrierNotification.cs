@@ -3,20 +3,18 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class MessageLightArea : MonoBehaviour
+
+public class BarrierNotification : MonoBehaviour
 {
     public Text text;
 
-
     private void OnTriggerEnter(Collider other)
     {
-        text.text = "\n" + "This place is to dark" + "\n" + "I should grab some kind of light first.";
+        text.text = "\n" + "This looks too dangerous" + "\n" + "I should turn the axes off first.";
     }
 
     private void OnTriggerExit(Collider other)
     {
         text.text = "";
-        Destroy(text, 5);
-        Destroy(gameObject, 5);
     }
 }
