@@ -3,9 +3,9 @@
     <Files>
       <File FileName="Assets/Downloaded Packs/IndieMarc/EnemyVision/Scripts/EnemyLOS.cs" Line="133" Column="1" />
       <File FileName="Assets/Scripts/FPEInteractablePaperScript.cs" Line="13" Column="1" />
-      <File FileName="Assets/PickupPaperScript.cs" Line="6" Column="2" />
-      <File FileName="Assets/Scripts/PaperCounterUI.cs" Line="16" Column="44" />
-      <File FileName="Assets/Scripts/FPEDoorScript.cs" Line="40" Column="39" />
+      <File FileName="Assets/Scripts/PickupPaperScript.cs" Line="31" Column="10" />
+      <File FileName="Assets/Scripts/PaperCounterUI.cs" Line="37" Column="10" />
+      <File FileName="Assets/Scripts/FPEDoorScript.cs" Line="28" Column="35" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />

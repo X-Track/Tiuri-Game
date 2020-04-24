@@ -7,13 +7,14 @@ public class PaperCounterUI : MonoBehaviour
 {
     private GameObject paperCounterUIElement;
     public int realPaperCounter;
-    private Text counterText;
+    private Image counterText;
+    public Sprite[] sprites;
 
 
     void Start()
     {
         paperCounterUIElement = GameObject.Find("PaperCounter");
-        counterText = paperCounterUIElement.GetComponent<Text>();
+        counterText = paperCounterUIElement.GetComponent<Image>();
     }
 
     // Update is called once per frame
@@ -21,11 +22,19 @@ public class PaperCounterUI : MonoBehaviour
     {
         if (realPaperCounter == 0)
         {
-            counterText.text = "Letter Collected 0 / 1";
+            counterText.sprite = sprites[0];
         }
         if (realPaperCounter == 1)
         {
-            counterText.text = "Letter Collected 1 / 1";
+            counterText.sprite = sprites[1];
+        }
+        if (realPaperCounter == 2)
+        {
+            counterText.sprite = sprites[2];
+        }
+        if (realPaperCounter == 3)
+        {
+            counterText.sprite = sprites[3];
         }
     }
 
