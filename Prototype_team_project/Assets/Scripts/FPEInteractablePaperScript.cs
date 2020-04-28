@@ -7,7 +7,10 @@ public class FPEInteractablePaperScript : FPEInteractableBaseScript
     private GameObject papercounterui;
     public GameObject pickupParticals;
     private PaperCounterUI PaperCounterUIscript;
-        public override void Awake()
+
+
+
+public override void Awake()
         {
             base.Awake();
             interactionType = eInteractionType.PAPERS;

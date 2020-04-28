@@ -49,6 +49,7 @@ namespace UnityStandardAssets.Characters.FirstPerson{
         private bool isCrouching = false;
         private bool isRunning;
 
+
         // Custom stuff for my own version of this stanard script
         [Header("Custom Flags")]
 		[Tooltip("Toggle jump ability on and off")]
@@ -279,6 +280,7 @@ namespace UnityStandardAssets.Characters.FirstPerson{
 
             if (speed == 10f)
             {
+                gameObject.transform.localScale = new Vector3(1, 1f, 1);
                 foreach (GameObject enemy in Enemies)
                 {
                     enemyscript = enemy.GetComponent<EnemyLOS>();
@@ -287,6 +289,7 @@ namespace UnityStandardAssets.Characters.FirstPerson{
             }
             if (speed == 4f)
             {
+                gameObject.transform.localScale = new Vector3(1, 1f, 1);
                 foreach (GameObject enemy in Enemies)
                 {
                     enemyscript = enemy.GetComponent<EnemyLOS>();
@@ -297,6 +300,7 @@ namespace UnityStandardAssets.Characters.FirstPerson{
 
             if (speed == 2)
             {
+                gameObject.transform.localScale =  new Vector3(1, 0.7f, 1);
                 foreach (GameObject enemy in Enemies)
                 {
                     enemyscript = enemy.GetComponent<EnemyLOS>();
