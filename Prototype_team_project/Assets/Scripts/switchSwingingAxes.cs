@@ -13,12 +13,16 @@ public class switchSwingingAxes : MonoBehaviour
     public GameObject electric;
     private SwingingAxes axeScript1;
     private SwingingAxes axeScript2;
+    public Animator leverAnimator;
+    public Renderer lever;
+    public Material leverOn;
+    public Material leverOff;
 
     void Start()
     {
         axeScript1 = axe1.GetComponent<SwingingAxes>();
         axeScript2 = axe2.GetComponent<SwingingAxes>();
-
+        leverAnimator.SetBool("isOn", true);
         isInRange = false;
         isAxeOn = false;
     }
@@ -64,16 +68,20 @@ public class switchSwingingAxes : MonoBehaviour
         {
             axeScript1.BoolChanger(isOn);
             axeScript2.BoolChanger(isOn);
+            lever.material = leverOn;
             barrier.SetActive(true);
             electric.SetActive(true);
+            leverAnimator.SetBool("isOn",true);
         }
 
         if (!isOn)
         {
             axeScript1.BoolChanger(isOn);
             axeScript2.BoolChanger(isOn);
+            lever.material = leverOff;
             barrier.SetActive(false);
             electric.SetActive(false);
+            leverAnimator.SetBool("isOn", false);
 
         }
     }

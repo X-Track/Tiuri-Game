@@ -284,7 +284,7 @@ namespace UnityStandardAssets.Characters.FirstPerson{
                 foreach (GameObject enemy in Enemies)
                 {
                     enemyscript = enemy.GetComponent<EnemyLOS>();
-                    enemyscript.ChangeVision(15, 45);
+                    enemyscript.ChangeVision(15, 55);
                 }
             }
             if (speed == 4f)
@@ -304,7 +304,7 @@ namespace UnityStandardAssets.Characters.FirstPerson{
                 foreach (GameObject enemy in Enemies)
                 {
                     enemyscript = enemy.GetComponent<EnemyLOS>();
-                    enemyscript.ChangeVision(5, 45);
+                    enemyscript.ChangeVision(2, 35);
                 }
             }
         }

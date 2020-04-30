@@ -6,11 +6,11 @@ using UnityEngine.UI;
 public class MessageLightArea : MonoBehaviour
 {
     public Text text;
-
+    
 
     private void OnTriggerEnter(Collider other)
     {
-        text.text = "\n" + "This place is to dark" + "\n" + "I should grab some kind of light first.";
+        text.text = "\n" + "This place is too dark" + "\n" + "I should grab some kind of light first.";
     }
 
     private void OnTriggerExit(Collider other)

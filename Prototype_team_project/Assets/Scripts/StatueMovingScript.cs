@@ -10,7 +10,8 @@ public class StatueMovingScript : MonoBehaviour
 
     void Start()
     {
-        
+        isInRange = false;
+        statueAnimator.SetBool("isActivating", false);
     }
 
     // Update is called once per frame
