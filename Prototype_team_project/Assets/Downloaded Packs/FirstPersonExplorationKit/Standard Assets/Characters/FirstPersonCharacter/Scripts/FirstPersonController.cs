@@ -63,11 +63,9 @@ namespace UnityStandardAssets.Characters.FirstPerson{
         public float enemyAngle;
         private EnemyLOS enemyscript;
 
-
         private void Start(){
 
             Enemies = GameObject.FindGameObjectsWithTag("Enemy");
-
 
             m_CharacterController = GetComponent<CharacterController>();
             m_Camera = Camera.main;
@@ -79,7 +77,6 @@ namespace UnityStandardAssets.Characters.FirstPerson{
             m_Jumping = false;
             m_AudioSource = GetComponent<AudioSource>();
 			gameObject.GetComponent<UnityStandardAssets.Characters.FirstPerson.MouseLook>().Init(transform , m_Camera.transform);
-
         }
 
         private void Update(){

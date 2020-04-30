@@ -92,5 +92,9 @@ public class dialogScript : MonoBehaviour
         {
             textMesh.text = "\n" + "Ridder: After you are done with the instructions go to the right, there is a secret entrance leading straight to the castle. Good luck kid!";
         }
+        if (textDialog == 10 && isInRange)
+        {
+            textMesh.text = "\n" + "";
+        }
     }
 }
