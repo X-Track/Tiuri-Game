@@ -6,9 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Tiuri_on_adventure-Build_0.5.30/Tiuri_on_adventure-title-Build_0.5.28.unity
+    guid: ef8f3885a7a004a049ff999b2de34367
+  - enabled: 1
     path: Assets/Tiuri_on_adventure-Build_0.5.30/Tiuri_on_adventure-Start-Build_0.5.28.unity
     guid: fe981661079d943f7906228c85adca62
   - enabled: 1
-    path: Assets/Tiuri_on_adventure-Build_0.5.30/Tiuri_on_adventure-title-Build_0.5.28.unity
-    guid: ef8f3885a7a004a049ff999b2de34367
+    path: Assets/Tiuri_on_adventure-Build_0.5.30/Tiuri_on_adventure-Main-Build_0.5.29.unity
+    guid: 6790220ca359d434dbacf489e8fb9259
   m_configObjects: {}
