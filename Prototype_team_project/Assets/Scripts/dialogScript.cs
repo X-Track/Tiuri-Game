@@ -11,7 +11,8 @@ public class dialogScript : MonoBehaviour
 
     [Header("Checks")]
     public Text textMesh;
-
+    public Text textTiuri;
+    public Text textKnight;
 
     void Start()
     {
@@ -20,6 +21,8 @@ public class dialogScript : MonoBehaviour
 
         //default text is none
         textMesh.text = "";
+        textTiuri.text = "";
+        textKnight.text = "";
 
         //dialog start is 0
         textDialog = 0;
@@ -54,47 +57,70 @@ public class dialogScript : MonoBehaviour
         }
         if (textDialog == 0 && isInRange)
         {
-            textMesh.text = "\n" + "Ridder: HEY YOU! You must help me!" + "\n" + "F to talk";
+            textMesh.text = "HEY YOU! You must help me!";
+            textTiuri.text = "";
+            textKnight.text = "Knight:";
+
         }
         if (textDialog == 1 && isInRange)
         {
-            textMesh.text = "\n" + "Ridder: The black magician, Prince Viridian, stole a letter from my king... I was there myself on this terrible day. This letter must be delivered to Dagonaut!";
+            textTiuri.text = "";
+            textKnight.text = "Knight:";
+            textMesh.text = "The black magician, Prince Viridian, stole a letter from my king... I was there myself on this terrible day. This letter must be delivered to Dagonaut!";
         }
         if (textDialog == 2 && isInRange)
         {
-            textMesh.text = "\n" + "Ridder: The black magician tore the letter into 3 parts and hid it in his castle not far from here! Your job is to find these 3 parts and bring them back to me.";
+            textTiuri.text = "";
+            textKnight.text = "Knight:";
+            textMesh.text = "The black magician tore the letter into 3 parts and hid it in his castle not far from here! Your job is to find these 3 parts and bring them back to me.";
         }
         if (textDialog == 3 && isInRange)
         {
-            textMesh.text = "\n" + "Ridder: But be carefull! Some people say there are ghostly knights under command of Prins Viridian… They wander the castle… looking for lost souls!";
+            textTiuri.text = "";
+            textKnight.text = "Knight:";
+            textMesh.text = "But be carefull! Some people say there are ghostly knights under command of Prins Viridian… They wander the castle… looking for lost souls!";
         }
         if (textDialog == 4 && isInRange)
         {
-            textMesh.text = "\n" + "Tiuri: I… I don’t know… I failed to become a knight… So I don’t think you can rely on me fulfilling this mission…";
+            textTiuri.text = "Tiuri:";
+            textKnight.text = "";
+            textMesh.text = "I… I don’t know… I failed to become a knight… So I don’t think you can rely on me fulfilling this mission…";
         }
         if (textDialog == 5 && isInRange)
         {
-            textMesh.text = "\n" + "Ridder: Kid... You are the only chance to save our kingdoms. A great war is at stake!";
+            textTiuri.text = "";
+            textKnight.text = "Knight:";
+            textMesh.text = "You are the only chance to save our kingdoms. A great war is at stake!";
         }
         if (textDialog == 6 && isInRange)
         {
-            textMesh.text = "\n" + "Ridder: See this mission as your final test to become a knight… If you pass this I will personally speak to your king and I will demand that you become a knight!";
+            textTiuri.text = "";
+            textKnight.text = "Knight:";
+            textMesh.text = "See this mission as your final test to become a knight… If you pass this I will personally speak to your king and I will demand that you become a knight!";
         }
         if (textDialog == 7 && isInRange)
         {
-            textMesh.text = "\n" + "Tiuri: This might be my only chance to become a knight… If you promise this, I will accept your mission.";
+            textTiuri.text = "Tiuri:";
+            textKnight.text = "";
+            textMesh.text = "This might be my only chance to become a knight… If you promise this, I will accept your mission.";
         }
         if (textDialog == 8 && isInRange)
         {
-            textMesh.text = "\n" + "Ridder: I like to hear that ... Next to me is a book with instructions ... Read it carefully, because this might save your life. ";
+            textTiuri.text = "";
+            textKnight.text = "Knight:";
+            textMesh.text = "I like to hear that ... Next to me is a book with instructions ... Read it carefully, because this might save your life. ";
         }
         if (textDialog == 9 && isInRange)
         {
-            textMesh.text = "\n" + "Ridder: After you are done with the instructions go to the right, there is a secret entrance leading straight to the castle. Good luck kid!";
+            textTiuri.text = "";
+            textKnight.text = "Knight:";
+            textMesh.text = "After you are done with the instructions go to the right, there is a secret entrance leading straight to the castle. Good luck kid!";
         }
         if (textDialog == 10 && isInRange)
         {
-            textMesh.text = "\n" + "";
+            textTiuri.text = "";
+            textKnight.text = "";
+            textMesh.text = "";
         }
     }
 }
