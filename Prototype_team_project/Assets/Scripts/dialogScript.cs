@@ -13,6 +13,7 @@ public class dialogScript : MonoBehaviour
     public Text textMesh;
     public Text textTiuri;
     public Text textKnight;
+    public Text textTalk;
 
     void Start()
     {
@@ -42,6 +43,9 @@ public class dialogScript : MonoBehaviour
         {
             isInRange = false;
             textMesh.text = "";
+            textTiuri.text = "";
+            textKnight.text = "";
+            textTalk.text = "";
             textDialog = 0;
         }
     }
@@ -59,12 +63,14 @@ public class dialogScript : MonoBehaviour
         {
             textMesh.text = "HEY YOU! You must help me!";
             textTiuri.text = "";
+            textTalk.text = "F to Talk";
             textKnight.text = "Knight:";
 
         }
         if (textDialog == 1 && isInRange)
         {
             textTiuri.text = "";
+            textTalk.text = "";
             textKnight.text = "Knight:";
             textMesh.text = "The black magician, Prince Viridian, stole a letter from my king... I was there myself on this terrible day. This letter must be delivered to Dagonaut!";
         }
