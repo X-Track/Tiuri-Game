@@ -2,7 +2,7 @@
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Loadnextlevel.cs">
     <Files>
       <File FileName="Assets/Scripts/switchSwingingAxes.cs" Line="39" Column="66" />
-      <File FileName="Assets/KeyForDoor.cs" Line="28" Column="32" />
+      <File FileName="Assets/Scripts/KeyForDoor.cs" Line="28" Column="32" />
       <File FileName="Assets/Scripts/FPEDoorScriptkeyd.cs" Line="25" Column="34" />
       <File FileName="Assets/Scripts/FPEDoorScript.cs" Line="43" Column="12" />
       <File FileName="Assets/Scripts/dialogScript.cs" Line="85" Column="33" />
