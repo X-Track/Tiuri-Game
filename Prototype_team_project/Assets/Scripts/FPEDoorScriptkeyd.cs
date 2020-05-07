@@ -12,23 +12,21 @@ public class FPEDoorScriptkeyd : MonoBehaviour
 
 
     public Text TextLabel;
-    public GameObject keyImage;
-    public bool keyPickedup;
+    private GameObject keyImage;
+    static public bool keyPickedup;
 
 
     void Start()
     {
        animator = GetComponent<Animator>();
+       keyImage = GameObject.Find("keyImage");
        isOpen = false;
        inRange = false;
-       keyPickedup = false;
-       keyImage.SetActive(false);
     }
 
     public void PickedupKey()
     {
         keyPickedup = true;
-        keyImage.SetActive(true);
     }
 
     private void OnTriggerEnter(Collider other)
@@ -54,18 +52,28 @@ public class FPEDoorScriptkeyd : MonoBehaviour
         if (inRange && Input.GetKeyDown(KeyCode.F) && keyPickedup)
         {
             UnlockDoor();
+            TextLabel.text = "Used The Key To Unlock The Door";
         }
 
         if (inRange && Input.GetKeyDown(KeyCode.F) && !keyPickedup)
         {
             TextLabel.text = "Need a Key To UnLock";
+        } 
+
+        if (keyPickedup)
+        {
+            keyImage.SetActive(true);
+        }
+        if (!keyPickedup)
+        {
+            keyImage.SetActive(false);
         }
     }
 
 
     private void UnlockDoor()
     {
-        keyImage.SetActive(false);
+        keyPickedup = false;
         isOpen = !isOpen;
         animator.SetBool("Open", isOpen);
     }

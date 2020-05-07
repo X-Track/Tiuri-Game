@@ -70,7 +70,6 @@ public class dialogScript : MonoBehaviour
         if (textDialog == 1 && isInRange)
         {
             textTiuri.text = "";
-            textTalk.text = "";
             textKnight.text = "Knight:";
             textMesh.text = "The black magician, Prince Viridian, stole a letter from my king... I was there myself on this terrible day. This letter must be delivered to Dagonaut!";
         }
@@ -125,6 +124,7 @@ public class dialogScript : MonoBehaviour
         if (textDialog == 10 && isInRange)
         {
             textTiuri.text = "";
+            textTalk.text = "";
             textKnight.text = "";
             textMesh.text = "";
         }

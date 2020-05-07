@@ -11,7 +11,7 @@ public class KeyForDoor : MonoBehaviour
     public Text text;
     public GameObject key;
 
-    private bool pickedUp;
+    static private bool pickedUp;
 
     private void Start()
     {

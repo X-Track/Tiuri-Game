@@ -6,15 +6,19 @@ using UnityEngine.UI;
 public class PaperCounterUI : MonoBehaviour
 {
     private GameObject paperCounterUIElement;
-    public int realPaperCounter;
+    static public int realPaperCounter;
     private Image counterText;
     public Sprite[] sprites;
+    private LoadLastlevel lastlevelscript;
+    private Text uitext;
 
 
     void Start()
     {
+        uitext = GameObject.Find("TextLabel").GetComponent<Text>();
         paperCounterUIElement = GameObject.Find("PaperCounter");
         counterText = paperCounterUIElement.GetComponent<Image>();
+        lastlevelscript = GameObject.Find("LastlevelTeleport").GetComponent<LoadLastlevel>();
     }
 
     // Update is called once per frame
@@ -34,6 +38,13 @@ public class PaperCounterUI : MonoBehaviour
         }
         if (realPaperCounter == 3)
         {
+            uitext.text = "Now I can escape trought the tunnels";
+            StartCoroutine(RemoveTheText(5));
+            lastlevelscript.ChangeBool();
+            counterText.sprite = sprites[3];
+        }
+        if (realPaperCounter == 4)
+        {
             counterText.sprite = sprites[3];
         }
     }
@@ -41,5 +52,12 @@ public class PaperCounterUI : MonoBehaviour
     public void PaperCounterPlusPlus()
     {
         realPaperCounter = realPaperCounter +1;
+    }
+
+    IEnumerator RemoveTheText(float time)
+    {
+        yield return new WaitForSeconds(time);
+        realPaperCounter = realPaperCounter + 1;
+        uitext.text = "";
     }
 }

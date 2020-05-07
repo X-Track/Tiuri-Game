@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Tiuri_on_adventure-Build_0.5.30/Tiuri_on_adventure-Main-Build_0.5.29.unity
     guid: 6790220ca359d434dbacf489e8fb9259
+  - enabled: 1
+    path: Assets/Tiuri_on_adventure-Build_0.5.30/Tiuri_on_adventure-End-Build_0.5.29.unity
+    guid: affbdc65ef28c4395a4b2714dc07492a
   m_configObjects: {}

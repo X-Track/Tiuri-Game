@@ -46,7 +46,7 @@ namespace UnityStandardAssets.Characters.FirstPerson{
         private bool m_Jumping;
         private AudioSource m_AudioSource;
         private GameObject[] Enemies;
-        private bool isCrouching = false;
+        public bool isCrouching = false;
         private bool isRunning;
 
 
@@ -82,6 +82,17 @@ namespace UnityStandardAssets.Characters.FirstPerson{
         private void Update(){
 
             RotateView();
+
+            if (isCrouching)
+            {
+                m_WalkSpeed = m_CrouchSpeed;
+            }
+            if (!isCrouching)
+            {
+                m_WalkSpeed = m_FixedWalkSpeed;
+            }
+
+
             // the jump state needs to read here to make sure it is not missed
             if (enableJump && !m_Jump){
 				m_Jump = Input.GetButtonDown("Jump");
@@ -247,15 +258,8 @@ namespace UnityStandardAssets.Characters.FirstPerson{
             if (Input.GetButtonDown("Crouch"))
             {
                 m_WalkSpeed = m_CrouchSpeed;
-                isCrouching = true;
+                isCrouching = !isCrouching;
             }
-
-            if (Input.GetButtonUp("Crouch"))
-            {
-                isCrouching = false;
-                m_WalkSpeed = m_FixedWalkSpeed;
-            }
-
 
 
             //// set the desired speed to be walking or running
@@ -280,6 +284,7 @@ namespace UnityStandardAssets.Characters.FirstPerson{
                 gameObject.transform.localScale = new Vector3(1, 1f, 1);
                 foreach (GameObject enemy in Enemies)
                 {
+                    isCrouching = false;
                     enemyscript = enemy.GetComponent<EnemyLOS>();
                     enemyscript.ChangeVision(15, 55);
                 }
@@ -289,6 +294,7 @@ namespace UnityStandardAssets.Characters.FirstPerson{
                 gameObject.transform.localScale = new Vector3(1, 1f, 1);
                 foreach (GameObject enemy in Enemies)
                 {
+                    isCrouching = false;
                     enemyscript = enemy.GetComponent<EnemyLOS>();
                     enemyscript.ChangeVision(10, 45);
                 }
