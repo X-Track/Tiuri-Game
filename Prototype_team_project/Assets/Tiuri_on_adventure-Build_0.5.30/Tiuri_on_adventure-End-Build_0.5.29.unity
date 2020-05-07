@@ -5555,6 +5555,14 @@ PrefabInstance:
       propertyPath: m_CrouchSpeed
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 11449602, guid: 33c5135306dba104e8150c9f04ed29f2, type: 3}
+      propertyPath: YSensitivity
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 11449602, guid: 33c5135306dba104e8150c9f04ed29f2, type: 3}
+      propertyPath: XSensitivity
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 33c5135306dba104e8150c9f04ed29f2, type: 3}
 --- !u!1 &1395911430 stripped
