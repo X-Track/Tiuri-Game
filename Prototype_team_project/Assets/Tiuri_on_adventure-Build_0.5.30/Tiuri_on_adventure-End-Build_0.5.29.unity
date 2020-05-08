@@ -2107,10 +2107,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sprites:
-  - {fileID: 21300000, guid: dd8cf2925445d460ba6da932884d466e, type: 3}
-  - {fileID: 21300000, guid: 6a5946013c43941ffae81bcc841d2612, type: 3}
-  - {fileID: 21300000, guid: 75bfa26edfa4a4742ada0436f9e86b17, type: 3}
-  - {fileID: 21300000, guid: 5a9816a0eca034661a873cbf7042de4d, type: 3}
+  - {fileID: 21300000, guid: bf2519f2e3cb84570b22552baa2e44e7, type: 3}
+  - {fileID: 21300000, guid: 458ad501a87044e79bf1707d810e794f, type: 3}
+  - {fileID: 21300000, guid: 8a70b0fa065594bdc9f742335c78703d, type: 3}
+  - {fileID: 21300000, guid: 6941e98b76a954b9280bc2dad1bc8904, type: 3}
 --- !u!1001 &666838216
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3394,7 +3394,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &887864332
 RectTransform:
   m_ObjectHideFlags: 0

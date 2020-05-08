@@ -1,5 +1,11 @@
 ﻿<Properties StartupConfiguration="{747BA969-08F1-06F2-7B53-91EA4CA13637}|">
-  <MonoDevelop.Ide.Workbench />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Downloaded Packs/IndieMarc/EnemyVision/Scripts/EnemyLOS.cs">
+    <Files>
+      <File FileName="Assets/Downloaded Packs/IndieMarc/EnemyVision/Scripts/EnemyLOS.cs" Line="127" Column="1" />
+      <File FileName="Assets/Scripts/FPEDoorScript.cs" Line="36" Column="26" />
+      <File FileName="Assets/Scripts/PaperCounterUI.cs" Line="29" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />
