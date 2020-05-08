@@ -47,6 +47,13 @@ namespace IndieMarc.StealthLOS
         private EnemyVision vision;
         public GameObject player;
         private float state_timer = 0f;
+
+
+
+
+
+
+
         
         void Start()
         {
