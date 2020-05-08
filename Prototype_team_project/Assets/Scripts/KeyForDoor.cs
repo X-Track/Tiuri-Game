@@ -10,11 +10,14 @@ public class KeyForDoor : MonoBehaviour
     private bool inRange;
     public Text text;
     public GameObject key;
+    private AudioSource AudioSourcePlayer;
+    public AudioClip pickupkeyaudio;
 
     static private bool pickedUp;
 
     private void Start()
     {
+        AudioSourcePlayer = GameObject.Find("AudioPlayer").GetComponent<AudioSource>();
         DoorScript = interactableDoor.GetComponent<FPEDoorScriptkeyd>();
     }
 
@@ -56,7 +59,22 @@ public class KeyForDoor : MonoBehaviour
     private void PickUpKey()
     {
         pickedUp = true;
+        PlayPickupSound();
         key.SetActive(false);
         DoorScript.PickedupKey();
     }
+
+    private void PlayPickupSound()
+    {
+        if (pickedUp)
+        {
+            AudioSourcePlayer.PlayOneShot(pickupkeyaudio);
+        }
+        else
+        {
+            return;
+        }
+    }
+
+
 }

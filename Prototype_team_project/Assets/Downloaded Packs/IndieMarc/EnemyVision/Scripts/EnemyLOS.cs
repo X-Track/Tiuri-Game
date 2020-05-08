@@ -50,13 +50,17 @@ namespace IndieMarc.StealthLOS
 
 
 
+        public AudioClip Seen;
 
+        private AudioSource audioplayer;
 
-
+        private Respawn RespanManager;
 
         
         void Start()
         {
+            RespanManager = GameObject.Find("RespawnManager").GetComponent<Respawn>();
+            audioplayer = GameObject.Find("AudioPlayer").GetComponent<AudioSource>();
             enemy_patrol = GetComponent<EnemyPatrol>();
             enemy_follow = GetComponent<EnemyFollow>();
             enemy = GetComponent<Enemy>();
@@ -153,6 +157,7 @@ namespace IndieMarc.StealthLOS
                 {
                     seen_character = character;
                     ChangeState(EnemyLOSState.Alert);
+                    audioplayer.PlayOneShot(Seen);
 
                     if (onSeeTarget != null)
                         onSeeTarget.Invoke(seen_character);
@@ -212,7 +217,7 @@ namespace IndieMarc.StealthLOS
         private void Yeetenator()
         {
             Debug.Log("huts");
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            RespanManager.GotCought();
         }
 
         public void ChangeState(EnemyLOSState state)

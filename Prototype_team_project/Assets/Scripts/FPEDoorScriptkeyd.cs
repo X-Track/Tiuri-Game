@@ -15,10 +15,16 @@ public class FPEDoorScriptkeyd : MonoBehaviour
     private GameObject keyImage;
     static public bool keyPickedup;
 
+    private AudioSource AudioSourcePlayer;
+    public AudioClip playDoorOpenSound;
+    public AudioClip playDoorCloseSound;
+
+
 
     void Start()
     {
-       animator = GetComponent<Animator>();
+        AudioSourcePlayer = GameObject.Find("AudioPlayer").GetComponent<AudioSource>();
+        animator = GetComponent<Animator>();
        keyImage = GameObject.Find("keyImage");
        isOpen = false;
        inRange = false;
@@ -79,6 +85,16 @@ public class FPEDoorScriptkeyd : MonoBehaviour
     }
 
 
+
+    public void PlayDoorOpenSound()
+    {
+        AudioSourcePlayer.PlayOneShot(playDoorOpenSound);
+    }
+
+    public void PlayDoorCloseSound()
+    {
+        AudioSourcePlayer.PlayOneShot(playDoorCloseSound);
+    }
 
 
     //IEnumerator UsedKey (float time)

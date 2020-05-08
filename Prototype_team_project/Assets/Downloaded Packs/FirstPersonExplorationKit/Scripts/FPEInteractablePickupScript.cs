@@ -58,6 +58,9 @@ public class FPEInteractablePickupScript : FPEInteractableBaseScript {
 	protected bool beingPutBack = false;
 	protected bool pickedUp = false;
 
+    private AudioSource audioSourceyeet;
+
+
 	public override void Awake(){
 
 		base.Awake();
@@ -66,8 +69,12 @@ public class FPEInteractablePickupScript : FPEInteractableBaseScript {
 		canInteractWithWhileHoldingObject = false;
 
 		gameObject.layer = LayerMask.NameToLayer("FPEPickupObjects");
+        audioSourceyeet = GetComponent<AudioSource>();
 
-		if(enableSounds){
+        audioSourceyeet.volume = 0;
+        StartCoroutine(Turnonvolume());
+
+        if (enableSounds){
 
 			if(enableSounds && !gameObject.GetComponent<AudioSource>()){
 				Debug.LogError("FPEInteractablePickupScript:: Pickup object '" + gameObject.name + "' has sounds enabled, but the Game Object is missing an AudioSource. Either add an AudioSource component, or uncheck the enableSounds check box.");
@@ -100,7 +107,13 @@ public class FPEInteractablePickupScript : FPEInteractableBaseScript {
 
 	}
 
-	public virtual void Update(){
+    IEnumerator Turnonvolume()
+    {
+        yield return new WaitForSeconds(5);
+        audioSourceyeet.volume = 0.7f;
+    }
+
+    public virtual void Update(){
 
 		if(enableSounds){
 

@@ -12,13 +12,22 @@ public class FPEDoorScript : MonoBehaviour
     public bool isOpen;
     private bool canInteract;
 
+
+    private AudioSource AudioSourcePlayer;
+    public AudioClip playDoorOpenSound;
+    public AudioClip playDoorCloseSound;
+
+
     void Start()
     {
-       animator = GetComponent<Animator>();
-       InteractionTextLabel = GameObject.Find("InteractionTextLabel");
-       UIText = InteractionTextLabel.GetComponent<Text>();
-       isOpen = false;
-       canInteract = false;
+        AudioSourcePlayer = GameObject.Find("AudioPlayer").GetComponent<AudioSource>();
+        animator = GetComponent<Animator>();
+        InteractionTextLabel = GameObject.Find("InteractionTextLabel");
+        UIText = InteractionTextLabel.GetComponent<Text>();
+        isOpen = false;
+        canInteract = false;
+        AudioSourcePlayer.volume = 0;
+        StartCoroutine(Turnonvolume());
     }
 
     private void OnTriggerEnter(Collider other)
@@ -38,10 +47,27 @@ public class FPEDoorScript : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.F)&& canInteract)
+        if (Input.GetKeyDown(KeyCode.F) && canInteract)
         {
             isOpen = !isOpen;
             animator.SetBool("Open", isOpen);
         }
+    }
+
+
+    public void PlayDoorOpenSound()
+    {
+        AudioSourcePlayer.PlayOneShot(playDoorOpenSound);
+    }
+
+    public void PlayDoorCloseSound()
+    {
+        AudioSourcePlayer.PlayOneShot(playDoorCloseSound);
+    }
+
+    IEnumerator Turnonvolume()
+    {
+        yield return new WaitForSeconds(5);
+        AudioSourcePlayer.volume = 0.7f;
     }
 }

@@ -6,10 +6,13 @@ public class StatueMovingScript : MonoBehaviour
 {
     public Animator statueAnimator;
     private bool isInRange;
-
+    public AudioClip playStatueMoveingSound;
+    private AudioSource AudioSourcePlayer;
+    private bool isplaying;
 
     void Start()
     {
+        AudioSourcePlayer = GameObject.Find("AudioPlayer").GetComponent<AudioSource>();
         isInRange = false;
         statueAnimator.SetBool("isActivating", false);
     }
@@ -17,9 +20,11 @@ public class StatueMovingScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (isInRange && Input.GetKeyDown(KeyCode.F))
+        if (isInRange && Input.GetKeyDown(KeyCode.F) && !isplaying)
         {
             statueAnimator.SetBool("isActivating", true);
+            AudioSourcePlayer.PlayOneShot(playStatueMoveingSound);
+            isplaying = true;
         }
     }
 
@@ -40,4 +45,5 @@ public class StatueMovingScript : MonoBehaviour
             isInRange = false;
         }
     }
+
 }
