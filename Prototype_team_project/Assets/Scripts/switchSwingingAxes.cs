@@ -15,6 +15,9 @@ public class switchSwingingAxes : MonoBehaviour
     private SwingingAxes axeScript2;
     public Animator leverAnimator;
     public Renderer lever;
+
+    public MeshRenderer schakeldoos;
+
     public Material leverOn;
     public Material leverOff;
 
@@ -68,7 +71,7 @@ public class switchSwingingAxes : MonoBehaviour
         {
             axeScript1.BoolChanger(isOn);
             axeScript2.BoolChanger(isOn);
-            lever.material = leverOn;
+            schakeldoos.material = leverOn;
             barrier.SetActive(true);
             electric.SetActive(true);
             leverAnimator.SetBool("isOn",true);
@@ -78,7 +81,7 @@ public class switchSwingingAxes : MonoBehaviour
         {
             axeScript1.BoolChanger(isOn);
             axeScript2.BoolChanger(isOn);
-            lever.material = leverOff;
+            schakeldoos.material = leverOff;
             barrier.SetActive(false);
             electric.SetActive(false);
             leverAnimator.SetBool("isOn", false);

@@ -1,5 +1,5 @@
 ﻿<Properties StartupConfiguration="{747BA969-08F1-06F2-7B53-91EA4CA13637}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Respawn1.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/switchSwingingAxes.cs">
     <Files>
       <File FileName="Assets/Downloaded Packs/IndieMarc/EnemyVision/Scripts/EnemyLOS.cs" Line="62" Column="1" />
       <File FileName="Assets/Scripts/FPEDoorScript.cs" Line="16" Column="5" />
@@ -8,11 +8,13 @@
       <File FileName="Assets/Scripts/StatueMovingScript.cs" Line="27" Column="30" />
       <File FileName="Assets/Downloaded Packs/FirstPersonExplorationKit/Scripts/FPEInteractablePickupScript.cs" Line="75" Column="40" />
       <File FileName="Assets/Scripts/FPEDoorScriptkeyd.cs" Line="24" Column="17" />
-      <File FileName="Assets/Scripts/PaperCounterUI.cs" Line="59" Column="46" />
+      <File FileName="Assets/Scripts/PaperCounterUI.cs" Line="32" Column="1" />
       <File FileName="Assets/Scripts/dialogScript.cs" Line="282" Column="10" />
-      <File FileName="Assets/destroyobjectaftersecondsad.cs" Line="15" Column="2" />
-      <File FileName="Temp/copyassets/Respawn.cs.meta" Line="8" Column="2" />
-      <File FileName="Assets/Scripts/Respawn1.cs" Line="7" Column="22" />
+      <File FileName="Assets/Scripts/destroyobjectaftersecondsad.cs" Line="15" Column="2" />
+      <File FileName="Assets/Scripts/Respawn1.cs" Line="75" Column="9" />
+      <File FileName="Assets/Scripts/dialogScriptend.cs" Line="30" Column="24" />
+      <File FileName="Assets/Scripts/scenemanager.cs" Line="23" Column="1" />
+      <File FileName="Assets/Scripts/switchSwingingAxes.cs" Line="71" Column="13" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />

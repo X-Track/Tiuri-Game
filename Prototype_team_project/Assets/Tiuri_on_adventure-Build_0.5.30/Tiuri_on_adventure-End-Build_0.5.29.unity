@@ -3434,7 +3434,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 5a9816a0eca034661a873cbf7042de4d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6941e98b76a954b9280bc2dad1bc8904, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -5873,7 +5873,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 25d7c84293edc407182df4e2242e6b91, type: 3}
+  m_audioClip: {fileID: 8300000, guid: aae67b16778904129b5fdfef46b89f20, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.175
   m_Pitch: 1
@@ -7498,10 +7498,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
-  m_Radius: 11.821658
+  m_Radius: 8.011606
   m_Height: 2.3643312
   m_Direction: 1
-  m_Center: {x: -0.14700697, y: 0.103125855, z: 5.899035}
+  m_Center: {x: -2.0667372, y: 0.103125855, z: 2.473711}
 --- !u!1 &1820024084
 GameObject:
   m_ObjectHideFlags: 0

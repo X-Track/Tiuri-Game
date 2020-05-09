@@ -14,4 +14,9 @@ public class scenemanager : MonoBehaviour
     {
         Application.Quit();
     }
+
+    public void FromBegining()
+    {
+        Application.LoadLevel("Tiuri_on_adventure-Start-Build_0.5.28");
+    }
 }
