@@ -7,13 +7,18 @@ public class mouseLock : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        Sethidecursor();
     }
 
-    // Update is called once per frame
-    void Update()
+    public void Sethidecursor()
     {
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
+    }
+
+    public void ShowCursor()
+    {
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
     }
 }

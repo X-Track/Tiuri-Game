@@ -18,11 +18,12 @@ public class FPEInteractableJournalScript : FPEInteractableBaseScript {
 	[Header("Journal Pages")]
 	[Tooltip("The journal pages that will be readable when the journal is opened. Must be 1 or more pages.")]
 	public Sprite[] journalPages;
+    private mouseLock Mouselocl;
 
 
 	public override void Awake(){
-		
-		base.Awake();
+        Mouselocl = GameObject.Find("mouselock").GetComponent<mouseLock>();
+        base.Awake();
 		interactionType = eInteractionType.JOURNAL;
 		// Journals require both hands to read
 		canInteractWithWhileHoldingObject = false;
@@ -34,13 +35,15 @@ public class FPEInteractableJournalScript : FPEInteractableBaseScript {
 	// you could instead Destroy the game object here and set a variable in another script.
 	public void activateJournal(){
 		gameObject.GetComponent<Collider>().enabled = false;
-	}
+        Mouselocl.ShowCursor();
+    }
 
-	public void deactivateJournal(){
-		if(postReadInteractionString != ""){
-			interactionString = postReadInteractionString;
-		}
+    public void deactivateJournal(){
+        if(postReadInteractionString != ""){
+            interactionString = postReadInteractionString;
+        }
+        Mouselocl.Sethidecursor();
 		gameObject.GetComponent<Collider>().enabled = true;
-	}
+    }
 
 }
